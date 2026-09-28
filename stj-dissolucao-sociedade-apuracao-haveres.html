@@ -1,1 +1,488 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sem contrato claro entre sócios, até a Justiça se perde nas contas — Blog Leactis</title>
+<meta name="description" content="O STJ mandou o TJ-SP julgar de novo uma disputa entre sócios que já dura anos — tudo porque faltou clareza sobre como calcular a saída de um sócio. Veja o que aprender com esse caso.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Sem contrato claro entre sócios, até a Justiça se perde nas contas — Blog Leactis">
+<meta property="og:description" content="O STJ mandou o TJ-SP julgar de novo uma disputa entre sócios que já dura anos — tudo porque faltou clareza sobre como calcular a saída de um sócio. Veja o que aprender com esse caso.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.leactis.com.br/stj-dissolucao-sociedade-apuracao-haveres.html">
+<meta property="og:image" content="https://images.pexels.com/photos/33175653/pexels-photo-33175653.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<style>
+
+  :root{
+    --bg:#F4FAFA;
+    --card:#FFFFFF;
+    --ink:#0D2B33;
+    --text:#33505A;
+    --muted:#6E8A8F;
+    --cyan:#0FA89C;
+    --cyan-dark:#0C8478;
+    --border:#DCEDEC;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg);
+    min-height:100vh;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+  }
+  a{ color:var(--cyan-dark); text-decoration:none; }
+  header.site{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:22px 24px;
+    max-width:760px;
+    margin:0 auto;
+    border-bottom:1px solid var(--border);
+  }
+  header.site .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+  }
+  header.site .brand img{ width:28px; height:28px; }
+  header.site .brand span{
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:0.12em;
+    color:var(--cyan-dark);
+  }
+  header.site nav a{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    color:var(--muted);
+    margin-left:20px;
+    text-decoration:none;
+  }
+  main{
+    max-width:680px;
+    margin:0 auto;
+    padding:36px 24px 60px;
+  }
+  main.wide{ max-width:760px; }
+  footer.site{
+    max-width:760px;
+    margin:0 auto;
+    padding:24px;
+    border-top:1px solid var(--border);
+    font-family:'Inter',sans-serif;
+    font-size:11.5px;
+    color:var(--muted);
+    text-align:center;
+  }
+  .breadcrumb{
+    font-family:'Inter',sans-serif;
+    font-size:12px;
+    color:var(--cyan-dark);
+    margin-bottom:20px;
+    display:block;
+    text-decoration:none;
+  }
+  .meta-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:14px;
+  }
+  .kicker{
+    font-family:'Inter',sans-serif;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  .dot{ color:var(--border); }
+  .reading-time{
+    font-family:'Inter',sans-serif;
+    font-size:11px;
+    color:var(--muted);
+  }
+  .tags{
+    display:flex;
+    gap:8px;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+  }
+  .tag{
+    display:inline-block;
+    font-family:'Inter',sans-serif;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    color:var(--cyan-dark);
+    background:rgba(15,168,156,0.10);
+    border:1px solid rgba(15,168,156,0.25);
+    border-radius:999px;
+    padding:3px 10px;
+    margin-right:6px;
+    margin-bottom:6px;
+  }
+  article h1{
+    font-family:'Playfair Display',serif;
+    font-size:34px;
+    line-height:1.2;
+    color:var(--ink);
+    margin-bottom:22px;
+  }
+  article h1 em{ color:var(--cyan-dark); font-style:italic; }
+  article h2{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    line-height:1.3;
+    color:var(--ink);
+    margin:34px 0 14px 0;
+  }
+  article img.cover{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:8px;
+    display:block;
+    box-shadow:0 4px 16px rgba(13,43,51,0.10);
+  }
+  .caption{
+    font-family:'Inter',sans-serif;
+    font-size:12px;
+    color:var(--muted);
+    margin-bottom:26px;
+  }
+  article p{
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.75;
+    color:var(--text);
+    margin-bottom:18px;
+  }
+  article strong{ color:var(--cyan-dark); }
+  article ul{
+    margin:0 0 22px 0;
+    padding:0;
+    list-style:none;
+  }
+  article ul li{
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    line-height:1.6;
+    color:var(--text);
+    padding:12px 0;
+    border-top:1px solid var(--border);
+  }
+  article ul li:last-child{ border-bottom:1px solid var(--border); }
+  article ul li strong{ color:var(--cyan-dark); }
+  .callout{
+    margin:24px 0;
+    padding:18px 20px;
+    background:rgba(15,168,156,0.06);
+    border-left:3px solid var(--cyan);
+    border-radius:0 8px 8px 0;
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    line-height:1.6;
+    color:var(--text);
+  }
+  .callout strong{ color:var(--ink); }
+  .source-box{
+    margin-top:34px;
+    padding:16px 18px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:8px;
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+
+  /* Compartilhar */
+  .share-row{
+    display:flex;
+    gap:10px;
+    margin:30px 0;
+    flex-wrap:wrap;
+  }
+  .share-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    font-family:'Inter',sans-serif;
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--cyan-dark);
+    background:rgba(15,168,156,0.08);
+    border:1px solid rgba(15,168,156,0.25);
+    border-radius:999px;
+    padding:8px 16px;
+    text-decoration:none;
+  }
+  .share-btn.whatsapp{ color:#1DA851; background:rgba(29,168,81,0.08); border-color:rgba(29,168,81,0.25); }
+
+  /* Caixa de assinatura embutida */
+  .inline-signup{
+    margin:44px 0 10px;
+    padding:28px 24px;
+    background:linear-gradient(135deg, rgba(15,168,156,0.07), rgba(15,168,156,0.02));
+    border:1px solid rgba(15,168,156,0.25);
+    border-radius:14px;
+  }
+  .inline-signup h3{
+    font-family:'Playfair Display',serif;
+    font-size:21px;
+    color:var(--ink);
+    margin-bottom:8px;
+  }
+  .inline-signup p{
+    font-family:'Inter',sans-serif;
+    font-size:13.5px;
+    color:var(--text);
+    margin-bottom:16px;
+  }
+  .inline-signup form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .inline-signup input{
+    width:100%;
+    padding:12px 14px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:#FFFFFF;
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    outline:none;
+  }
+  .inline-signup input:focus{ border-color:var(--cyan); }
+  .inline-signup button{
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:var(--cyan);
+    color:#FFFFFF;
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    font-size:13.5px;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    cursor:pointer;
+  }
+  .inline-signup .fine{
+    font-family:'Inter',sans-serif;
+    font-size:10.5px;
+    color:var(--muted);
+    margin-top:10px;
+  }
+
+  /* Relacionados */
+  .related{
+    margin-top:48px;
+  }
+  .related h3{
+    font-family:'Playfair Display',serif;
+    font-size:19px;
+    color:var(--ink);
+    margin-bottom:16px;
+  }
+  .related-grid{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .related-card{
+    display:block;
+    padding:14px 16px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    font-family:'Inter',sans-serif;
+  }
+  .related-card:hover{ border-color:var(--cyan); }
+  .related-card .rc-tag{
+    font-size:10.5px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    margin-bottom:4px;
+  }
+  .related-card .rc-title{
+    font-family:'Playfair Display',serif;
+    font-size:16px;
+    color:var(--ink);
+  }
+
+  /* Contato no rodapé */
+  footer.site{ text-align:center; }
+  .contact-row{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-top:14px;
+    padding-top:14px;
+    border-top:1px solid var(--border);
+  }
+  .contact-row a{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:'Inter',sans-serif;
+    font-size:12px;
+    color:var(--muted);
+    text-decoration:none;
+  }
+  .contact-row a:hover{ color:var(--cyan-dark); }
+
+  /* Botão flutuante do WhatsApp */
+  .wa-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:56px;
+    height:56px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 4px 14px rgba(0,0,0,0.25);
+    z-index:999;
+    text-decoration:none;
+  }
+  .wa-float svg{ width:28px; height:28px; }
+  .wa-float:hover{ opacity:0.92; }
+
+  /* ===== Responsividade ===== */
+  @media (max-width: 640px){
+    header.site{ padding:16px 18px; }
+    header.site .brand span{ font-size:13px; }
+    header.site nav a{ font-size:12px; margin-left:12px; }
+    main{ padding:24px 18px 50px; }
+    article h1{ font-size:26px; margin-bottom:16px; }
+    article h2{ font-size:19px; margin:26px 0 12px 0; }
+    article p{ font-size:15px; line-height:1.65; }
+    article ul li{ font-size:14px; }
+    .inline-signup{ padding:22px 18px; }
+    .inline-signup h3{ font-size:18px; }
+    .wa-float{ width:50px; height:50px; bottom:16px; right:16px; }
+    .wa-float svg{ width:24px; height:24px; }
+    .share-row{ gap:8px; }
+    .share-btn{ font-size:11.5px; padding:7px 13px; }
+    .contact-row{ gap:10px; flex-direction:column; align-items:center; }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px){
+    main{ padding:32px 28px 56px; }
+    article h1{ font-size:30px; }
+  }
+
+  img{ max-width:100%; height:auto; }
+  html{ -webkit-text-size-adjust:100%; overflow-x:hidden; }
+  body{ overflow-x:hidden; }
+</style>
+</head>
+<body>
+<header class="site">
+  <a href="index.html" class="brand">
+    <img src="logo.png" alt="Leactis">
+    <span>LEACTIS BLOG</span>
+  </a>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="https://newsletter.leactis.com.br">Newsletter</a>
+  </nav>
+</header>
+
+<main>
+  <a href="index.html" class="breadcrumb">&larr; Voltar ao blog</a>
+  <article>
+    <div class="meta-row">
+      <span class="kicker">Jurídico · Societário · 28 de setembro de 2026</span>
+      <span class="dot">·</span>
+      <span class="reading-time">4 min de leitura</span>
+    </div>
+    <div class="tags"><span class="tag">Jurídico</span><span class="tag">Gestão</span></div>
+    <h1>Sem contrato claro entre sócios, <em>até a Justiça se perde nas contas</em></h1>
+    <img class="cover" src="https://images.pexels.com/photos/33175653/pexels-photo-33175653.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Aperto de mãos entre dois profissionais em ambiente corporativo">
+    <div class="caption">O STJ mandou o Tribunal de São Paulo julgar de novo uma briga entre sócios que já dura anos, porque a decisão anterior não respondeu perguntas básicas.</div>
+    <p>Dois sócios decidem que a sociedade acabou. Um quer sair, o outro fica com o negócio. Alguém precisa calcular quanto vale a parte de quem está saindo — isso se chama <strong>apuração de haveres</strong>. Parece simples. Só que, quando o contrato social (ou o combinado entre os sócios) não deixa claro como e quando fazer essa conta, o que devia ser resolvido em meses vira anos de processo. Foi o que aconteceu num caso que o STJ mandou julgar de novo, porque a decisão anterior não convenceu nem o próprio Judiciário.</p>
+    <h2>O que aconteceu</h2>
+    <p>Uma sociedade de fato entre sócios, em São Paulo, chegou ao fim — e a Justiça precisou decidir três coisas ao mesmo tempo: se a sociedade realmente existia como sociedade de fato, a partir de quando ela deveria ser considerada dissolvida, e quanto o sócio que saiu tinha direito a receber. Na primeira instância, o juiz fixou o valor dos haveres em <strong>R$ 375.384,37</strong> e decretou a dissolução. O Tribunal de Justiça de São Paulo (TJ/SP), ao julgar os recursos, mudou a data usada como base pra fazer essa conta, mandou repetir a perícia contábil do zero e ainda reduziu os honorários do advogado pra <strong>R$ 958.031,92</strong> — 10% do valor total que a ação buscava.</p>
+    <h2>Por que o STJ mandou fazer tudo de novo</h2>
+    <p>O ministro Ricardo Villas Bôas Cueva, da Terceira Turma do STJ, anulou as decisões do TJ/SP. O motivo não foi o valor em si — foi a forma como o tribunal paulista decidiu. Segundo o ministro, o TJ/SP usou <strong>fundamentação genérica</strong> e deixou de responder perguntas que, se respondidas de outro jeito, mudariam o resultado — o que o Código de Processo Civil (art. 489, §1º) trata, na prática, como decisão sem fundamentação válida.</p>
+    <ul>
+      <li><strong>Se havia contrato por prazo determinado</strong> — o tribunal não esclareceu se a sociedade tinha prazo pra acabar, o que muda toda a lógica da dissolução</li>
+      <li><strong>Qual a data certa pra fazer a conta</strong> — mudar o marco temporal sem explicar o critério deixa a apuração de haveres sem parâmetro claro</li>
+      <li><strong>Até onde ia o pedido</strong> — não ficou claro se o que foi decidido correspondia ao que de fato havia sido pedido pelas partes</li>
+      <li><strong>Uma contradição interna</strong> — o TJ/SP rejeitou o pedido de rescisão contratual, mas ao mesmo tempo reconheceu que a sociedade estava dissolvida — duas conclusões que não conversam entre si</li>
+    </ul>
+    <div class="callout"><strong>O que isso significa na prática:</strong> o processo volta pro TJ/SP pra ser julgado de novo, respondendo a cada um desses pontos. Ou seja: mais tempo, mais gasto com advogado e perícia, e a mesma incerteza de antes — esticada por mais alguns anos.</div>
+    <h2>O que isso ensina pra quem tem sócio</h2>
+    <p>A raiz do problema, nesse caso, nem foi bem o Judiciário — foi a falta de clareza lá na origem, no contrato social ou no combinado entre os sócios. Quando não existe uma regra escrita e objetiva sobre como calcular quanto vale a saída de um sócio, cada etapa do processo vira um novo ponto de discordância: que data usar, que método de avaliação aplicar, se cabe nova perícia, quanto pagar de honorários. Isso pesa ainda mais em sociedades que nasceram informalmente — os chamados "sócios de fato" — sem um contrato social redigido com esse cuidado.</p>
+    <ul>
+      <li><strong>Coloque no papel a regra de saída</strong> — como e quando calcular quanto vale a parte de quem sai, antes que isso vire disputa</li>
+      <li><strong>Defina a data de referência</strong> — deixe escrito qual marco temporal vale pra apuração de haveres, pra não depender de interpretação judicial depois</li>
+      <li><strong>Formalize sociedades "de fato"</strong> — se você e um sócio dividem um negócio sem contrato social formal, essa é a lacuna que mais gera briga judicial</li>
+      <li><strong>Revise o acordo de sócios de tempos em tempos</strong> — principalmente se a sociedade cresceu ou mudou de atividade desde que foi criada</li>
+    </ul>
+    <p>Contrato bem redigido não evita toda discussão entre sócios — mas evita que a discussão vire uma novela judicial de anos, como essa que agora recomeça do zero no TJ/SP.</p>
+
+    <div class="source-box">Fonte: STJ, REsp 2.180.645, rel. min. Ricardo Villas Bôas Cueva (Terceira Turma) — decisão noticiada em 26 de setembro de 2026 (Migalhas).</div>
+    <div class="share-row">
+      <a class="share-btn whatsapp" href="https://wa.me/?text=Sem%20contrato%20claro%20entre%20s%C3%B3cios%2C%20at%C3%A9%20a%20Justi%C3%A7a%20se%20perde%20nas%20contas%20https://blog.leactis.com.br/stj-dissolucao-sociedade-apuracao-haveres.html" target="_blank">↗ WhatsApp</a>
+      <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://blog.leactis.com.br/stj-dissolucao-sociedade-apuracao-haveres.html" target="_blank">↗ LinkedIn</a>
+    </div>
+    <div class="inline-signup">
+      <h3>Quer receber isso direto no seu e-mail?</h3>
+      <p>Toda vez que sair uma notícia tributária, jurídica ou de gestão relevante, você recebe primeiro.</p>
+      <form method="POST" action="https://13f7d092.sibforms.com/serve/MUIFAAh9WOS6b53FCtRL2zTYEEeeseFob9GGWHhwh-f-BeLFgb1XJ1O2Ql5ZT1S8UxTym1rJI_LUv2ivBKUbn9MW_6FNd2WnA7Dd9gVvIVG3jCiJ887FtpNEcJGBI8mvkejy8U35r_DwImvWMBwp5e2RJJmVZ-6PphFNBkeLGY1OyqD5EPVV7Dnku4Py57hKmOa5F4rsxm-SNcvlaw==">
+        <input type="text" name="NOME" placeholder="Seu nome" required>
+        <input type="text" name="EMAIL" placeholder="seu@email.com" required>
+        <button type="submit">Quero receber</button>
+      </form>
+      <div class="fine">Sem spam. Você pode cancelar a inscrição quando quiser.</div>
+    </div>
+    <div class="related">
+      <h3>Leia também</h3>
+      <div class="related-grid">
+        <a href="sucessao-empresarial-fraudulenta-tjsp.html" class="related-card">
+        <div class="rc-tag">Jurídico</div>
+        <div class="rc-title">Fechou numa sexta, reabriu na segunda com outro nome — a dívida seguiu junto</div>
+      </a>
+    <a href="stj-honorarios-recuperacao-judicial-tema-1250.html" class="related-card">
+        <div class="rc-tag">Jurídico</div>
+        <div class="rc-title">Seu cliente quebrou? O STJ decidiu quem paga o advogado na briga pelo crédito</div>
+      </a>
+    <a href="cazetv-inpi-marca.html" class="related-card">
+        <div class="rc-tag">Jurídico</div>
+        <div class="rc-title">Uma das marcas mais fortes do país foi barrada pelo INPI</div>
+      </a>
+      </div>
+    </div>
+  </article>
+</main>
+<footer class="site">
+  © Leactis · Conteúdo tributário, jurídico e de gestão, sem enrolação
+  <div class="contact-row">
+    <a href="https://instagram.com/leactis.consultoria" target="_blank">@leactis.consultoria</a>
+    <a href="https://wa.me/5521986956773" target="_blank">WhatsApp (21) 98695-6773</a>
+    <a href="mailto:contato@leactis.com.br">contato@leactis.com.br</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5521986956773" target="_blank" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.912 6.482L4 29l7.72-1.877A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.213-4.583 1.114 1.128-4.464-.234-.367A9.78 9.78 0 0 1 5.182 15c0-5.964 4.854-10.818 10.819-10.818S26.818 9.036 26.818 15 21.965 24.818 16.001 24.818zm5.605-8.14c-.307-.154-1.816-.897-2.098-.999-.281-.103-.486-.154-.69.153-.205.308-.792.999-.97 1.204-.179.205-.358.23-.665.077-.307-.154-1.297-.478-2.47-1.523-.913-.814-1.53-1.82-1.708-2.128-.179-.307-.019-.473.135-.626.138-.138.307-.358.46-.537.154-.18.205-.307.307-.512.103-.205.051-.384-.026-.537-.077-.154-.69-1.663-.945-2.278-.249-.598-.502-.517-.69-.527l-.588-.01c-.205 0-.537.077-.818.384s-1.075 1.05-1.075 2.56 1.1 2.97 1.253 3.175c.154.205 2.166 3.307 5.248 4.637.733.316 1.305.505 1.751.646.735.234 1.404.201 1.933.122.59-.088 1.816-.742 2.072-1.459.256-.716.256-1.331.179-1.459-.077-.128-.282-.205-.589-.358z"/>
+  </svg>
+</a>
+
+</body>
+</html>

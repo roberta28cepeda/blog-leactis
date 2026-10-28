@@ -1,1 +1,491 @@
-PCFkb2N0eXBlIHhtbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/Pgo8cnNzIHZlcnNpb249IjIuMCIgeG1sbnM6YXRvbT0iaHR0cDovL3d3dy53My5vcmcvMjAwNS9BdG9tIj4KPGNoYW5uZWw+Cjx0aXRsZT5CbG9nIExlYWN0aXM8L3RpdGxlPgo8bGluaz5odHRwczovL2Jsb2cubGVhY3Rpcy5jb20uYnIvaW5kZXguaHRtbDwvbGluaz4KPGRlc2NyaXB0aW9uPkNvbnRlw7pkbyB0cmlidXTDoXJpbywganVyw61kaWNvIGUgZGUgZ2VzdOOjbyBwYXJhIHBlc3NvYXMgZsOtc2ljYXMsIGF1dMOybm9tb3MgZSBwZXF1ZW5hcyBlIG3DqWRpYXMgZW1wcmVzYXMsIHNlbSBqdXJpZGlxdcOqcy48L2Rlc2NyaXB0aW9uPgo8bGFuZ3VhZ2U+cHQtQlI8L2xhbmd1YWdlPgo8YXRvbTpsaW5rIGhyZWY9Imh0dHBzOi8vYmxvZy5sZWFjdGlzLmNvbS5ici9mZWVkLnhtbCIgcmVsPSJzZWxmIiB0eXBlPSJhcHBsaWNhdGlvbi9yc3MreG1sIi8+Cgo8aXRlbT4KPHRpdGxlPk8gVENVIGJhdGV1IG8gbWFydGVsbzogc3VhIENCUyB2YWkgY3VzdGFyIG1haXMgcXVlIG8gZXNwZXJhZG8gZW0gMjAyNzwvdGl0bGU+CjxsaW5rPmh0dHBzOi8vYmxvZy5sZWFjdGlzLmNvbS5ici90Y3UtYXByb3ZhLWFsaXF1b3RhLWNicy0xMTMuaHRtbDwvbGluaz4KPGd1aWQ+aHR0cHM6Ly9ibG9nLmxlYWN0aXMuY29tLmJyL3RjdS1hcHJvdmEtYWxpcXVvdGEtY2JzLTExMy5odG1sPC9ndWlkPgo8cHViRGF0ZT5XZWQsIDI4IE9jdCAyMDI2IDIwOjAwOjAwIEdNVDwvcHViRGF0ZT4KPGRlc2NyaXB0aW9uPk8gVENVIGFwcm92b3UgbmVzdGEgcXVhcnRhLWZlaXJhICgyOCkgYSBhbMOtcXVvdGEgZGUgcmVmZXLDqm5jaWEgZGEgQ0JTIGVtIDExLDMlIOKAlCBhY2ltYSBkYSBlc3RpbWF0aXZhIGRlIDksMjElIHF1ZSBvIG1lcmNhZG8gdmluaGEgdXNhbmRvLiBWZWphIG8gcXVlIGlzc28gbXVkYSBwcmEgc3VhIGNvbnRhIGRlIDIwMjcuPC9kZXNjcmlwdGlvbj4KPC9pdGVtPgoKPGl0ZW0+Cjx0aXRsZT5OZW0gYWNvcmRvLCBuZW0gZXhhbWUgZGUgRE5BIGJhc3RhbSBwcmEgdHJvY2FyIG8gcGFpIG5vIHJlZ2lzdHJvPC90aXRsZT4KPGxpbms+aHR0cHM6Ly9ibG9nLmxlYWN0aXMuY29tLmJyL3N0ai1wYXRlcm5pZGFkZS1yZWdpc3Rybi1kbmEtYWNvcmRvLmh0bWw8L2xpbms+CjxndWlkPmh0dHBzOi8vYmxvZy5sZWFjdGlzLmNvbS5ici9zdGotcGF0ZXJuaWRhZGUtcmVnaXN0cm8tZG5hLWFjb3Jkby5odG1sPC9ndWlkPgo8cHViRGF0ZT5XZWQsIDI4IE9jdCAyMDI2IDE4OjAwOjAwIEdNVDwvcHViRGF0ZT4KPGRlc2NyaXB0aW9uPk8gU1RKIGNvbmZpcm1vdSBxdWUgbXVkYXIgcXVlbSDDqSBvIHBhaSBubyByZWdpc3RybyBkZSBuYXNjaW1lbnRvIGV4aWdlIGHDp8OjbyBqdWRpY2lhbCBwcsOzcHJpYSwgY29tIHByb2R1Ю8gZGUgcHJvdmFzIOKAlCBtZXNtbyBxdWFuZG8gYXMgcGFydGVzIGrDoSBmaXplcmFtIGFjb3JkbyBlIG8gZXhhbWUgZGUgRE5BIGRldSBwb3NpdGl2by48L2Rlc2NyaXB0aW9uPgo8L2l0ZW0+Cgo8aXRlbT4KPHRpdGxlPkVzdGEgc2V4dGEgKDMwKSB0ZW0gZG9pcyBwcmF6b3MgZGEgcmVmb3JtYSBzZSBjcnV6YW5kbzwvdGl0bGU+CjxsaW5rPmh0dHBzOi8vYmxvZy5sZWFjdGlzLmNvbS5ici9jYnMtaWJzLWFsaXF1b3RhLXByYXpvLTMwLW91dHVicm8uaHRtbDwvbGluaz4KPGd1aWQ+aHR0cHM6Ly9ibG9nLmxlYWN0aXMuY29tLmJyL2Nicy1pYnMtYWxpcXVvdGEtcHJhem8tMzAtb3V0dWJyby5odG1sPC9ndWlkPgo8cHViRGF0ZT5Nb24sIDI2IE9jdCAyMDI2IDE5OjMwOjAwIEdNVDwvcHViRGF0ZT4KPGRlc2NyaXB0aW9uPk8gVENVIHRlbSBhdMOpIHNleHRhICgzMCkgcHJhIG1hbmRhciBhbyBTZW5hZG8gbyBjw6FsY3VsbyBkYSBhbMOtcXVvdGEgZGEgQ0JTIOKAlCBlc3RpbWF0aXZhIG7Do28gb2ZpY2lhbCBkZSBxdWFzZSAyOCUgc29tYW5kbyBDQlMgZSBJQlMuIEEgbWVzbWEgc2V4dGEgw6kgbyDDumx0aW1vIGRpYSBwcmEgZW1wcmVzYSBkbyBTaW1wbGVzIGVzY29saGVyIG8gcmVnaW1lIGRlIElCUyBlIENCUyBkZSAyMDI3LjwvZGVzY3JpcHRpb24+Cjwvml0ZW0+Cgo8aXRlbT4KPHRpdGxlPlN1YSBkw612aWRhIGRlIE1FSSBwb2RlIHRlciBhY2FiYWRvIGRlIHNlciBwZXJkb2FkYTwvdGl0bGU+Cjxsaw==
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Blog Leactis</title>
+<link>https://blog.leactis.com.br/index.html</link>
+<description>Conteúdo tributário, jurídico e de gestão para pessoas físicas, autônomos e pequenas e médias empresas, sem juridiquês.</description>
+<language>pt-BR</language>
+<atom:link href="https://blog.leactis.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+
+<item>
+<title>O TCU bateu o martelo: sua CBS vai custar mais que o esperado em 2027</title>
+<link>https://blog.leactis.com.br/tcu-aprova-aliquota-cbs-113.html</link>
+<guid>https://blog.leactis.com.br/tcu-aprova-aliquota-cbs-113.html</guid>
+<pubDate>Wed, 28 Oct 2026 20:00:00 GMT</pubDate>
+<description>O TCU aprovou nesta quarta-feira (28) a alíquota de referência da CBS em 11,3% — acima da estimativa de 9,21% que o mercado vinha usando. Veja o que isso muda pra sua conta de 2027.</description>
+</item>
+
+<item>
+<title>Nem acordo, nem exame de DNA bastam pra trocar o pai no registro</title>
+<link>https://blog.leactis.com.br/stj-paternidade-registro-dna-acordo.html</link>
+<guid>https://blog.leactis.com.br/stj-paternidade-registro-dna-acordo.html</guid>
+<pubDate>Wed, 28 Oct 2026 18:00:00 GMT</pubDate>
+<description>O STJ confirmou que mudar quem é o pai no registro de nascimento exige ação judicial própria, com produção de provas — mesmo quando as partes já fizeram acordo e o exame de DNA deu positivo.</description>
+</item>
+
+<item>
+<title>Esta sexta (30) tem dois prazos da reforma se cruzando</title>
+<link>https://blog.leactis.com.br/cbs-ibs-aliquota-prazo-30-outubro.html</link>
+<guid>https://blog.leactis.com.br/cbs-ibs-aliquota-prazo-30-outubro.html</guid>
+<pubDate>Mon, 26 Oct 2026 19:30:00 GMT</pubDate>
+<description>O TCU tem até sexta (30) pra mandar ao Senado o cálculo da alíquota da CBS — estimativa não oficial de quase 28% somando CBS e IBS. A mesma sexta é o último dia pra empresa do Simples escolher o regime de IBS e CBS de 2027.</description>
+</item>
+
+<item>
+<title>Sua dívida de MEI pode ter acabado de ser perdoada</title>
+<link>https://blog.leactis.com.br/lc238-2026-perdao-divida-mei.html</link>
+<guid>https://blog.leactis.com.br/lc238-2026-perdao-divida-mei.html</guid>
+<pubDate>Mon, 26 Oct 2026 18:00:00 GMT</pubDate>
+<description>A Lei Complementar nº 238/2026 perdoa débito federal de MEI constituído até 13 de outubro e aumenta o teto de faturamento para R$ 110 mil em 2027 e R$ 140 mil em 2028. Veja o que é automático e o que exige atenção.</description>
+</item>
+
+<item>
+<title>Seu fornecedor vai te dar crédito de IBS e CBS? Agora dá pra checar</title>
+<link>https://blog.leactis.com.br/consulta-fornecedor-ibs-cbs-simples-nacional.html</link>
+<guid>https://blog.leactis.com.br/consulta-fornecedor-ibs-cbs-simples-nacional.html</guid>
+<pubDate>Fri, 23 Oct 2026 20:00:00 GMT</pubDate>
+<description>A Receita Federal liberou uma consulta pelo CNPJ pra você ver se seu fornecedor do Simples Nacional vai gerar crédito de IBS e CBS. E o prazo pra essa escolha termina em 30 de outubro.</description>
+</item>
+
+<item>
+<title>O Banco Central mudou as regras de quem pode usar os dados do seu Pix</title>
+<link>https://blog.leactis.com.br/open-finance-resolucao-conjunta-21.html</link>
+<guid>https://blog.leactis.com.br/open-finance-resolucao-conjunta-21.html</guid>
+<pubDate>Fri, 23 Oct 2026 18:00:00 GMT</pubDate>
+<description>Em 22 de outubro, o BC e o CMN aprovaram a Resolução Conjunta nº 21: mais consentimento e mais fiscalização pra quem compartilha seus dados financeiros no Open Finance. Veja o que muda — e o que fazer se você tem uma fintech.</description>
+</item>
+
+<item>
+<title>O STF tirou o ISS da conta do PIS e da Cofins</title>
+<link>https://blog.leactis.com.br/stf-tema-118-iss-pis-cofins.html</link>
+<guid>https://blog.leactis.com.br/stf-tema-118-iss-pis-cofins.html</guid>
+<pubDate>Thu, 22 Oct 2026 19:00:00 GMT</pubDate>
+<description>Em 21 de outubro, o STF concluiu o Tema 118 e decidiu, por 6 votos a 5, que o ISS não entra mais na base de cálculo do PIS e da Cofins. Veja quem pode ter dinheiro a recuperar — e por que a pressa importa.</description>
+</item>
+
+<item>
+<title>Sua conta de luz também vai sentir a reforma tributária</title>
+<link>https://blog.leactis.com.br/aneel-reforma-tributaria-tarifas-energia.html</link>
+<guid>https://blog.leactis.com.br/aneel-reforma-tributaria-tarifas-energia.html</guid>
+<pubDate>Wed, 21 Oct 2026 19:00:00 GMT</pubDate>
+<description>A ANEEL abriu, em 20 de outubro, duas consultas públicas de 10 dias pra decidir como tirar o PIS e a Cofins do preço da energia antes da chegada do IBS e da CBS em 2027. Veja o que está em jogo e quem sente primeiro.</description>
+</item>
+
+<item>
+<title>O STF decidiu: sua holding não paga ITBI pra colocar o imóvel no nome dela</title>
+<link>https://blog.leactis.com.br/stf-itbi-holding-decisao-final.html</link>
+<guid>https://blog.leactis.com.br/stf-itbi-holding-decisao-final.html</guid>
+<pubDate>Wed, 21 Oct 2026 18:00:00 GMT</pubDate>
+<description>Em 19 de outubro de 2026, o STF concluiu o julgamento do Tema 1.348 e decidiu, por 9 votos a 2, que a imunidade de ITBI também vale para holdings e empresas com atividade imobiliária. Veja o que mudou — e o limite que ainda existe.</description>
+</item>
+
+<item>
+<title>O IPI ia sumir em janeiro — mas o governo quer trazer ele de volta</title>
+<link>https://blog.leactis.com.br/pec-ipi-imposto-seletivo-2027.html</link>
+<guid>https://blog.leactis.com.br/pec-ipi-imposto-seletivo-2027.html</guid>
+<pubDate>Mon, 19 Oct 2026 19:00:00 GMT</pubDate>
+<description>Pra tapar o buraco de R$ 3,82 bilhões que o atraso do Imposto Seletivo criou, o Ministério da Fazenda estuda uma PEC pra manter o IPI vivo por mais algumas semanas em cigarro, bebida, carro, avião e mineração. Veja se o seu produto está na lista.</description>
+</item>
+
+<item>
+<title>Sua escala 6x1 tem data pra acabar</title>
+<link>https://blog.leactis.com.br/fim-escala-6x1-jornada-40-horas.html</link>
+<guid>https://blog.leactis.com.br/fim-escala-6x1-jornada-40-horas.html</guid>
+<pubDate>Mon, 19 Oct 2026 18:00:00 GMT</pubDate>
+<description>O Congresso promulgou a Emenda Constitucional nº 141/2026: fim da escala 6x1, 2 dias de descanso por semana e jornada caindo de 44h pra 40h em cerca de 14 meses. Veja o que muda e quando.</description>
+</item>
+
+<item>
+<title>Faltam 19 dias pro seu SAC virar alvo de fiscalização</title>
+<link>https://blog.leactis.com.br/leactis-decreto-sac-atendimento.html</link>
+<guid>https://blog.leactis.com.br/leactis-decreto-sac-atendimento.html</guid>
+<pubDate>Wed, 14 Oct 2026 18:00:00 GMT</pubDate>
+<description>O Decreto nº 13.135/2026 reescreve as regras do SAC: espera máxima de 5 minutos, atendimento humano das 8h às 20h e cancelamento imediato em qualquer canal. Vale a partir de 2 de novembro. Veja se sua empresa está no grupo afetado.</description>
+</item>
+
+<item>
+<title>Prometeram matar o Split Payment — mas a lei não deixa tão fácil assim</title>
+<link>https://blog.leactis.com.br/split-payment-pode-acabar.html</link>
+<guid>https://blog.leactis.com.br/split-payment-pode-acabar.html</guid>
+<pubDate>Tue, 13 Oct 2026 18:00:00 GMT</pubDate>
+<description>Um presidenciável prometeu extinguir o Split Payment se eleito. Juristas explicam o que a lei realmente exige pra isso acontecer — e por que sua empresa não deve esperar a política se resolver.</description>
+</item>
+
+<item>
+<title>86% das notas já destacam a CBS — a sua está nesse grupo?</title>
+<link>https://blog.leactis.com.br/cbs-86-porcento-notas-fiscais.html</link>
+<guid>https://blog.leactis.com.br/cbs-86-porcento-notas-fiscais.html</guid>
+<pubDate>Sat, 10 Oct 2026 18:00:00 GMT</pubDate>
+<description>A Receita Federal confirmou que 86% das notas fiscais emitidas por quem é obrigado já destacam a CBS nos últimos 30 dias. Veja quem ainda está de fora e o que isso significa pra 2027.</description>
+</item>
+
+<item>
+<title>Nem o governo sabe quanto vai cobrar do imposto do pecado</title>
+<link>https://blog.leactis.com.br/imposto-seletivo-mp-atraso.html</link>
+<guid>https://blog.leactis.com.br/imposto-seletivo-mp-atraso.html</guid>
+<pubDate>Wed, 07 Oct 2026 15:00:00 GMT</pubDate>
+<description>O prazo que o governo tinha pra definir a alíquota do Imposto Seletivo venceu em 2 de outubro sem decisão — a MP só deve sair depois da eleição. Veja quem fica no escuro pra 2027 e o que isso custa aos cofres públicos.</description>
+</item>
+
+<item>
+<title>Demitir funcionário em tratamento de câncer saiu caro pra essa faculdade</title>
+<link>https://blog.leactis.com.br/tst-professor-cancer-demissao-discriminatoria.html</link>
+<guid>https://blog.leactis.com.br/tst-professor-cancer-demissao-discriminatoria.html</guid>
+<pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
+<description>O TST mandou reintegrar um professor de 65 anos, com quase 30 anos de casa, demitido durante tratamento de linfoma — e pagar R$ 20 mil de indenização. Veja o que isso muda pra quem tem funcionário.</description>
+</item>
+
+<item>
+<title>Sua nota ganhou 3 semanas de folga — mas o motivo não é pra você relaxar</title>
+<link>https://blog.leactis.com.br/nf-e-adiamento-notas-tecnicas-outubro.html</link>
+<guid>https://blog.leactis.com.br/nf-e-adiamento-notas-tecnicas-outubro.html</guid>
+<pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate>
+<description>A Receita Federal e o ENCAT adiaram o cronograma de três notas técnicas da NF-e ligadas à Reforma Tributária. Homologação vai de 5 para 26 de outubro, e produção fica pra 16 de novembro de 2026. Veja o que muda e por que a folga é armadilha.</description>
+</item>
+
+<item>
+<title>Seu frete vai ganhar uma nota com cara nova</title>
+<link>https://blog.leactis.com.br/nt-2026-004-cte-contingencia-offline.html</link>
+<guid>https://blog.leactis.com.br/nt-2026-004-cte-contingencia-offline.html</guid>
+<pubDate>Mon, 05 Oct 2026 18:00:00 GMT</pubDate>
+<description>O governo aprovou a Nota Técnica 2026.004, que muda CT-e, NFCom, BP-e, NF3e, NFAg e NFGás: campo novo de valor líquido e contingência offline pro caminhão sem internet. Veja o que muda e quando.</description>
+</item>
+
+<item>
+<title>Seu plano de saúde "empresarial" pode ser um blefe</title>
+<link>https://blog.leactis.com.br/leactis-plano-saude-falso-coletivo.html</link>
+<guid>https://blog.leactis.com.br/leactis-plano-saude-falso-coletivo.html</guid>
+<pubDate>Mon, 05 Oct 2026 12:00:00 GMT</pubDate>
+<description>O TJ/PB reconheceu como "falso coletivo" um plano de saúde empresarial que só cobria um casal de sócios e o filho deles — e mandou aplicar o teto de reajuste de plano individual, com devolução de valores. Veja se o seu também pode estar nessa.</description>
+</item>
+
+<item>
+<title>O Split Payment saiu do papel: começam os testes de verdade</title>
+<link>https://blog.leactis.com.br/split-payment-fase-testes-outubro.html</link>
+<guid>https://blog.leactis.com.br/split-payment-fase-testes-outubro.html</guid>
+<pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+<description>A partir de 15 de outubro, a Receita Federal começa a testar, com maquininhas e fintechs de verdade, a integração com a Plataforma Pública do Split Payment. Veja o que isso muda — e o que ainda não muda — pra você.</description>
+</item>
+
+<item>
+<title>Hoje sua nota de serviço também entrou na reforma</title>
+<link>https://blog.leactis.com.br/ibs-cbs-nfse-nfcom-outubro.html</link>
+<guid>https://blog.leactis.com.br/ibs-cbs-nfse-nfcom-outubro.html</guid>
+<pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
+<description>A partir de hoje, prestadores de serviço fora do Simples Nacional precisam destacar os campos de IBS e CBS na NFS-e e na NFCom. Veja se sua empresa está no grupo de hoje ou só entra em dezembro.</description>
+</item>
+
+<item>
+<title>O prazo pra escolher seu imposto de 2027 ganhou mais 15 dias</title>
+<link>https://blog.leactis.com.br/prazo-simples-nacional-prorrogado-outubro.html</link>
+<guid>https://blog.leactis.com.br/prazo-simples-nacional-prorrogado-outubro.html</guid>
+<pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
+<description>A Receita Federal prorrogou até 15 de outubro o prazo pra empresas do Simples Nacional escolherem o regime de 2027. Veja o que mudou — e por que "mais tempo" não é motivo pra relaxar.</description>
+</item>
+
+<item>
+<title>Uma empresa já conseguiu pagar menos ICMS por causa da Reforma</title>
+<link>https://blog.leactis.com.br/liminar-ibs-cbs-fora-icms.html</link>
+<guid>https://blog.leactis.com.br/liminar-ibs-cbs-fora-icms.html</guid>
+<pubDate>Mon, 28 Sep 2026 18:00:00 GMT</pubDate>
+<description>Uma liminar da 16ª Vara da Fazenda Pública de São Paulo, concedida em 9 de setembro de 2026, autorizou uma empresa a excluir o IBS e a CBS da base de cálculo do ICMS. Veja o que aconteceu e se isso pode valer pra você também.</description>
+</item>
+
+<item>
+<title>Sem contrato claro entre sócios, até a Justiça se perde nas contas</title>
+<link>https://blog.leactis.com.br/stj-dissolucao-sociedade-apuracao-haveres.html</link>
+<guid>https://blog.leactis.com.br/stj-dissolucao-sociedade-apuracao-haveres.html</guid>
+<pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+<description>O STJ mandou o TJ-SP julgar de novo uma disputa entre sócios que já dura anos, porque a decisão anterior não respondeu perguntas básicas sobre a saída de um sócio. Veja o que aprender com esse caso.</description>
+</item>
+
+<item>
+<title>A partir de hoje, sua importação já fala a língua do IBS e da CBS</title>
+<link>https://blog.leactis.com.br/duimp-ibs-cbs-importacao.html</link>
+<guid>https://blog.leactis.com.br/duimp-ibs-cbs-importacao.html</guid>
+<pubDate>Sun, 27 Sep 2026 12:00:00 GMT</pubDate>
+<description>Em 27 de setembro, a DUIMP entrou no ar com campos novos de IBS e CBS. Ainda não tem cobrança — mas quem deixar pra testar depois vai brigar com nota travada em 2027.</description>
+</item>
+
+<item>
+<title>O manual de instruções do Split Payment finalmente saiu inteiro</title>
+<link>https://blog.leactis.com.br/split-payment-manual-tecnico-completo.html</link>
+<guid>https://blog.leactis.com.br/split-payment-manual-tecnico-completo.html</guid>
+<pubDate>Fri, 25 Sep 2026 21:00:00 GMT</pubDate>
+<description>Em 23 de setembro, a Receita Federal e o CGIBS fecharam o conjunto completo dos seis manuais técnicos da Plataforma Pública do Split Payment. Entenda o que saiu, quem mexe nisso e o que muda pra você.</description>
+</item>
+
+<item>
+<title>Débito zero, crédito zero? Não bem assim</title>
+<link>https://blog.leactis.com.br/postos-combustivel-debito-zero-credito-zero.html</link>
+<guid>https://blog.leactis.com.br/postos-combustivel-debito-zero-credito-zero.html</guid>
+<pubDate>Fri, 25 Sep 2026 18:00:00 GMT</pubDate>
+<description>No regime monofásico de IBS/CBS, o posto não recolhe imposto na venda do combustível — mas paga IBS/CBS nas despesas da operação. Entenda por que isso gera crédito, quem acumula mais e como funciona o ressarcimento em dinheiro.</description>
+</item>
+
+<item>
+<title>A multa da NR-1 quase voltou essa semana — mas não voltou</title>
+<link>https://blog.leactis.com.br/nr1-riscos-psicossociais-prorrogacao-90-dias.html</link>
+<guid>https://blog.leactis.com.br/nr1-riscos-psicossociais-prorrogacao-90-dias.html</guid>
+<pubDate>Fri, 25 Sep 2026 12:00:00 GMT</pubDate>
+<description>O prazo que terminaria dia 23 de setembro foi prorrogado por mais 90 dias pelo STF. Veja o que muda — e o que continua igual — pra quem tem funcionário.</description>
+</item>
+
+<item>
+<title>4 em cada 10 empresas ainda estão devendo lição de casa pro IBS e CBS</title>
+<link>https://blog.leactis.com.br/conformidade-ibs-cbs-levantamento-qive.html</link>
+<guid>https://blog.leactis.com.br/conformidade-ibs-cbs-levantamento-qive.html</guid>
+<pubDate>Thu, 24 Sep 2026 12:00:00 GMT</pubDate>
+<description>Levantamento da plataforma Qive, divulgado em 23 de setembro, analisou 226 milhões de notas fiscais e mostra que 40,71% das empresas do regime normal ainda não fecharam a conformidade com IBS e CBS. Veja onde mora o maior risco: o seu fornecedor.</description>
+</item>
+
+<item>
+<title>A Receita abriu uma central de dúvidas pra reforma tributária</title>
+<link>https://blog.leactis.com.br/forca-tarefa-reforma-tributaria-tira-duvidas.html</link>
+<guid>https://blog.leactis.com.br/forca-tarefa-reforma-tributaria-tira-duvidas.html</guid>
+<pubDate>Wed, 23 Sep 2026 18:00:00 GMT</pubDate>
+<description>Receita Federal, CFC, Sebrae e Fenacon lançaram, em 18 de setembro, uma força-tarefa e um portal único com calculadora, simulador de DARF e chat de atendimento sobre a Reforma Tributária. Veja o que tem lá — e o que isso não resolve sozinho.</description>
+</item>
+
+<item>
+<title>Fechou numa sexta, reabriu na segunda com outro nome — a dívida seguiu junto</title>
+<link>https://blog.leactis.com.br/sucessao-empresarial-fraudulenta-tjsp.html</link>
+<guid>https://blog.leactis.com.br/sucessao-empresarial-fraudulenta-tjsp.html</guid>
+<pubDate>Wed, 23 Sep 2026 12:00:00 GMT</pubDate>
+<description>O TJ-SP reconheceu sucessão empresarial fraudulenta numa agência dos Correios que fechou e reabriu com outro nome no mesmo endereço, com a família do antigo dono no comando. Veja o que isso significa se você está pensando em reestruturar seu negócio.</description>
+</item>
+
+<item>
+<title>Sua cooperativa tem até 31 de outubro pra não pagar imposto à toa</title>
+<link>https://blog.leactis.com.br/cooperativas-ibs-cbs-regime-especifico.html</link>
+<guid>https://blog.leactis.com.br/cooperativas-ibs-cbs-regime-especifico.html</guid>
+<pubDate>Mon, 21 Sep 2026 15:00:00 GMT</pubDate>
+<description>A Receita Federal e o Comitê Gestor do IBS abriram, em 18 de setembro, a orientação pra cooperativas pedirem o regime que zera IBS e CBS em várias operações. A janela fecha em 31 de outubro de 2026.</description>
+</item>
+
+<item>
+<title>9 em cada 10 processos de assédio eleitoral têm uma empresa no meio</title>
+<link>https://blog.leactis.com.br/assedio-eleitoral-empresas-2026.html</link>
+<guid>https://blog.leactis.com.br/assedio-eleitoral-empresas-2026.html</guid>
+<pubDate>Mon, 21 Sep 2026 12:00:00 GMT</pubDate>
+<description>Levantamento do TST e do CSJT, divulgado em 15 de setembro de 2026, mostra que 91,9% dos processos de assédio eleitoral analisados envolvem a própria empresa. Veja o que muda pra quem tem funcionário.</description>
+</item>
+
+<item>
+<title>Faltam 12 dias — e a Receita te deu uma calculadora pra não decidir no escuro</title>
+<link>https://blog.leactis.com.br/calculadora-cbs-ibs-simples-nacional.html</link>
+<guid>https://blog.leactis.com.br/calculadora-cbs-ibs-simples-nacional.html</guid>
+<pubDate>Fri, 18 Sep 2026 18:00:00 GMT</pubDate>
+<description>A Receita Federal lançou hoje a Calculadora de Tributos sobre o Consumo, pra empresas do Simples Nacional simularem CBS e IBS antes do prazo de 30 de setembro. E garantiu: dá pra rever a escolha depois.</description>
+</item>
+
+<item>
+<title>Alugou seu apê pelo Airbnb? A Justiça apertou o pause em todo o país</title>
+<link>https://blog.leactis.com.br/stj-suspende-processos-aluguel-temporada-condominio.html</link>
+<guid>https://blog.leactis.com.br/stj-suspende-processos-aluguel-temporada-condominio.html</guid>
+<pubDate>Fri, 18 Sep 2026 12:00:00 GMT</pubDate>
+<description>O STJ divulgou, em 17 de setembro, a suspensão nacional de todos os processos que discutem se a cláusula de "uso residencial" da convenção do condomínio já basta pra proibir aluguel de temporada por plataforma digital. Veja o que fazer.</description>
+</item>
+
+<item>
+<title>Split Payment não vai comer seu cartão em 2027 — mas não é desculpa pra deixar pra depois</title>
+<link>https://blog.leactis.com.br/split-payment-cronograma-2027-2028.html</link>
+<guid>https://blog.leactis.com.br/split-payment-cronograma-2027-2028.html</guid>
+<pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
+<description>A Receita Federal confirmou: o split payment começa em 2027 de forma opcional e só entre empresas — cartão, PF e MEI ficam de fora dessa primeira fase. A obrigatoriedade geral só vem em 2028.</description>
+</item>
+
+<item>
+<title>Sua holding pode ter que pagar ITBI pra colocar o imóvel no nome dela — e nem o STF sabe ainda</title>
+<link>https://blog.leactis.com.br/stf-itbi-imunidade-holding-imobiliaria.html</link>
+<guid>https://blog.leactis.com.br/stf-itbi-imunidade-holding-imobiliaria.html</guid>
+<pubDate>Wed, 16 Sep 2026 12:00:00 GMT</pubDate>
+<description>O STF suspendeu de novo, em 2 de setembro de 2026, o julgamento que decide se holdings imobiliárias pagam ITBI ao receber imóvel em troca de capital social. Mais de 300 processos aguardam a decisão. Veja o que fazer enquanto isso.</description>
+</item>
+
+<item>
+<title>O STF pôs um número na Justiça gratuita: R$ 5 mil</title>
+<link>https://blog.leactis.com.br/justica-gratuita-adc80-5-mil.html</link>
+<guid>https://blog.leactis.com.br/justica-gratuita-adc80-5-mil.html</guid>
+<pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
+<description>O STF julgou a ADC 80 e decidiu: quem ganha até R$ 5 mil por mês tem presunção automática de que não tem como pagar o processo. Quem ganha mais precisa provar, com documento, que não tem condições.</description>
+</item>
+
+<item>
+<title>Nem a Receita sabe quanto imposto você vai pagar em 2027</title>
+<link>https://blog.leactis.com.br/cbs-aliquota-referencia-tcu.html</link>
+<guid>https://blog.leactis.com.br/cbs-aliquota-referencia-tcu.html</guid>
+<pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
+<description>A Receita Federal enviou ao TCU o modelo de cálculo da alíquota da CBS, mas sem estimar o número. O Senado tem até 15 de dezembro para decidir — e o tema já virou disputa eleitoral.</description>
+</item>
+
+<item>
+<title>A multa da sua empresa pode ter ficado menor sem você saber</title>
+<link>https://blog.leactis.com.br/lc236-teto-multas-tributarias.html</link>
+<guid>https://blog.leactis.com.br/lc236-teto-multas-tributarias.html</guid>
+<pubDate>Mon, 07 Sep 2026 12:00:00 GMT</pubDate>
+<description>A Lei Complementar 236/2026 mudou o CTN e criou teto para multas tributárias: 75% na regra geral, 100% em fraude e 150% em reincidência. Veja se suas autuações se encaixam.</description>
+</item>
+
+<item>
+<title>Seu cliente quebrou? O STJ decidiu quem paga o advogado na briga pelo crédito</title>
+<link>https://blog.leactis.com.br/stj-honorarios-recuperacao-judicial-tema-1250.html</link>
+<guid>https://blog.leactis.com.br/stj-honorarios-recuperacao-judicial-tema-1250.html</guid>
+<pubDate>Mon, 07 Sep 2026 12:00:00 GMT</pubDate>
+<description>O STJ concluiu o julgamento do Tema 1250: quando você cobra dívida de um cliente ou fornecedor em recuperação judicial ou falência, agora há regra clara sobre quem paga o advogado da outra parte.</description>
+</item>
+
+<item>
+<title>Mandar funcionária emagrecer pra caber no uniforme saiu caro pro Burger King</title>
+<link>https://blog.leactis.com.br/uniforme-dano-moral-trt2.html</link>
+<guid>https://blog.leactis.com.br/uniforme-dano-moral-trt2.html</guid>
+<pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
+<description>O TRT-2 manteve indenização de R$ 20 mil por dano moral e reconheceu rescisão indireta depois que uma funcionária foi orientada a emagrecer para caber no uniforme. Veja o que isso significa pra quem tem funcionário fardado.</description>
+</item>
+
+<item>
+<title>Faltam 3 semanas pra multa da NR-1 voltar a valer</title>
+<link>https://blog.leactis.com.br/nr1-riscos-psicossociais-prazo-setembro.html</link>
+<guid>https://blog.leactis.com.br/nr1-riscos-psicossociais-prazo-setembro.html</guid>
+<pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+<description>O STF suspendeu por 90 dias as multas da NR-1 sobre riscos psicossociais. A trégua termina por volta de 23 de setembro de 2026. Veja o que continua obrigatório e o que fazer antes do prazo acabar.</description>
+</item>
+
+<item>
+<title>A partir de 1º de setembro, sua empresa escolhe o imposto de 2027</title>
+<link>https://blog.leactis.com.br/simples-nacional-opcao-2027.html</link>
+<guid>https://blog.leactis.com.br/simples-nacional-opcao-2027.html</guid>
+<pubDate>Thu, 27 Aug 2026 12:00:00 GMT</pubDate>
+<description>De 1º a 30 de setembro de 2026 abre a janela pra pedir opção pelo Simples Nacional em 2027 — já com IBS e CBS dentro do regime, no lugar do PIS/Cofins. Veja as datas e o que fazer.</description>
+</item>
+
+<item>
+<title>Resumo diário: Reforma Tributária (26/08/2026)</title>
+<link>https://blog.leactis.com.br/resumo-diario-26-08.html</link>
+<guid>https://blog.leactis.com.br/resumo-diario-26-08.html</guid>
+<pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
+<description>Novas regras técnicas para nota fiscal eletrônica e confirmação de que o Simples Nacional tradicional fica fora do split payment em 2027. Veja o que mudou nas últimas 48h.</description>
+</item>
+
+<item>
+<title>PIS/Cofins: o crédito que quase toda empresa esquece de pegar</title>
+<link>https://blog.leactis.com.br/pis-cofins-credito-insumo.html</link>
+<guid>https://blog.leactis.com.br/pis-cofins-credito-insumo.html</guid>
+<pubDate>Fri, 21 Aug 2026 12:00:00 GMT</pubDate>
+<description>Toda revisão tributária que fazemos encontra pelo menos um crédito de PIS/Cofins esquecido. Entenda o teste que a Justiça usa pra decidir o que conta como insumo, e como recuperar o que já foi pago a mais.</description>
+</item>
+
+<item>
+<title>Giro Tributário: o que mudou no seu bolso essa semana</title>
+<link>https://blog.leactis.com.br/giro-tributario-17-a-21-agosto.html</link>
+<guid>https://blog.leactis.com.br/giro-tributario-17-a-21-agosto.html</guid>
+<pubDate>Fri, 21 Aug 2026 12:00:00 GMT</pubDate>
+<description>STF proíbe IPTU maior por causa do tamanho do imóvel, Receita abre transação com desconto de até 70% e reforma tributária adia prazo da nota fiscal. Veja o resumo da semana de 17 a 21 de agosto.</description>
+</item>
+
+<item>
+<title>Giro Tributário: o que mudou no seu bolso essa semana</title>
+<link>https://blog.leactis.com.br/leactis-giro-tributario-agosto.html</link>
+<guid>https://blog.leactis.com.br/leactis-giro-tributario-agosto.html</guid>
+<pubDate>Fri, 21 Aug 2026 12:00:00 GMT</pubDate>
+<description>STF proíbe IPTU maior por causa do tamanho do imóvel, Receita abre transação com desconto de até 70% e reforma tributária adia prazo da nota fiscal. Veja o resumo da semana de 17 a 21 de agosto.</description>
+</item>
+
+<item>
+<title>Sua empresa contrata prestadores de serviços? Você pode estar deixando dinheiro na mesa</title>
+<link>https://blog.leactis.com.br/simples-nacional-regime-hibrido-setembro.html</link>
+<guid>https://blog.leactis.com.br/simples-nacional-regime-hibrido-setembro.html</guid>
+<pubDate>Thu, 20 Aug 2026 12:00:00 GMT</pubDate>
+<description>Empresas do Simples Nacional têm até 30 de setembro de 2026 para decidir entre o modelo tradicional e o regime híbrido de IBS/CBS. Essa escolha pode significar ganhar ou perder contratos B2B.</description>
+</item>
+
+<item>
+<title>O eSocial não é só burocracia — ele fala sobre o seu negócio inteiro</title>
+<link>https://blog.leactis.com.br/esocial-alem-da-obrigacao.html</link>
+<guid>https://blog.leactis.com.br/esocial-alem-da-obrigacao.html</guid>
+<pubDate>Wed, 12 Aug 2026 12:00:00 GMT</pubDate>
+<description>Você olha para o eSocial só como uma obrigação mensal? Ele concentra dados de folha, riscos e afastamentos que podem impactar sua carga tributária — e passar batido se ficar isolado no RH.</description>
+</item>
+
+<item>
+<title>Seu contrato ainda fala a língua do imposto antigo?</title>
+<link>https://blog.leactis.com.br/reforma-tributaria-revisao-contratual.html</link>
+<guid>https://blog.leactis.com.br/reforma-tributaria-revisao-contratual.html</guid>
+<pubDate>Mon, 10 Aug 2026 12:00:00 GMT</pubDate>
+<description>A Reforma Tributária mudou a regra do jogo, mas muito contrato continua com cláusula pensada pro sistema antigo. Entenda o que revisar antes que isso vire briga com cliente ou fornecedor.</description>
+</item>
+
+<item>
+<title>STF pode acabar com o "voto de desempate" que sempre favorecia a Receita</title>
+<link>https://blog.leactis.com.br/carf-voto-qualidade-stf.html</link>
+<guid>https://blog.leactis.com.br/carf-voto-qualidade-stf.html</guid>
+<pubDate>Mon, 03 Aug 2026 12:00:00 GMT</pubDate>
+<description>Em 26 de agosto, o STF julga o fim do voto de qualidade no CARF, que hoje desempata a favor do governo em disputas tributárias. Placar parcial: 5 a 1 contra a Fazenda.</description>
+</item>
+
+<item>
+<title>Em 7 dias sua nota pode simplesmente parar de sair</title>
+<link>https://blog.leactis.com.br/ibs-cbs-nota-fiscal-agosto.html</link>
+<guid>https://blog.leactis.com.br/ibs-cbs-nota-fiscal-agosto.html</guid>
+<pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+<description>A partir de 3 de agosto de 2026, o sistema passa a rejeitar automaticamente qualquer NF-e, NFC-e, CT-e ou NFS-e sem os campos de IBS e CBS corretamente preenchidos. Veja se sua empresa está no grupo afetado.</description>
+</item>
+
+<item>
+<title>Uma das marcas mais fortes do país foi barrada pelo INPI</title>
+<link>https://blog.leactis.com.br/cazetv-inpi-marca.html</link>
+<guid>https://blog.leactis.com.br/cazetv-inpi-marca.html</guid>
+<pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+<description>O INPI negou o registro da marca CazéTV por colisão com um registro anterior, Casé, na mesma classe. Entenda por que audiência e faturamento não garantem exclusividade de marca.</description>
+</item>
+
+<item>
+<title>Seu posto pode ter direito a recuperar dinheiro da Receita a partir de 2027</title>
+<link>https://blog.leactis.com.br/creditos-postos-combustivel.html</link>
+<guid>https://blog.leactis.com.br/creditos-postos-combustivel.html</guid>
+<pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+<description>Postos de combustível podem acumular créditos de IBS/CBS sobre despesas operacionais, mesmo sem crédito na compra do combustível. Entenda como funciona e o que organizar desde já.</description>
+</item>
+
+<item>
+<title>Split Payment: o que muda quando o imposto sai antes de cair na sua conta</title>
+<link>https://blog.leactis.com.br/split-payment.html</link>
+<guid>https://blog.leactis.com.br/split-payment.html</guid>
+<pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
+<description>A Receita já publicou o manual técnico do Split Payment. Entenda, de forma simples, como esse novo mecanismo vai mudar o dinheiro que cai na sua conta a partir de 2027.</description>
+</item>
+
+<item>
+<title>CNPJ Alfanumérico: o que muda para sua empresa a partir de julho</title>
+<link>https://blog.leactis.com.br/cnpj-alfanumerico.html</link>
+<guid>https://blog.leactis.com.br/cnpj-alfanumerico.html</guid>
+<pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+<description>Guia completo sobre o CNPJ alfanumérico: base legal, cronograma de implementação, impacto em sistemas e checklist de adaptação para empresas.</description>
+</item>
+
+<item>
+<title>Cashback do IRPF: o guia completo do lote especial de restituição</title>
+<link>https://blog.leactis.com.br/cashback-irpf.html</link>
+<guid>https://blog.leactis.com.br/cashback-irpf.html</guid>
+<pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+<description>Entenda em detalhes o lote especial de restituição automática do IRPF: quem tem direito, base legal, prazos e o que fazer se você não foi contemplado.</description>
+</item>
+
+<item>
+<title>Ganhou na bet? A Receita já sabe: entenda as regras de declaração</title>
+<link>https://blog.leactis.com.br/bets-malha-fina.html</link>
+<guid>https://blog.leactis.com.br/bets-malha-fina.html</guid>
+<pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+<description>Regras de declaração de ganhos em apostas esportivas, aluguéis e criptoativos no IRPF 2026, e como a Receita usa inteligência artificial para cruzar dados.</description>
+</item>
+
+<item>
+<title>Receita abre dados do Imposto de Renda: o que dá para descobrir</title>
+<link>https://blog.leactis.com.br/painel-dados-ir.html</link>
+<guid>https://blog.leactis.com.br/painel-dados-ir.html</guid>
+<pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+<description>A nova plataforma pública de dados do IRPF traz estatísticas anonimizadas por profissão, região e faixa de renda. Entenda o que é possível consultar e por quê.</description>
+</item>
+
+</channel>
+</rss>
